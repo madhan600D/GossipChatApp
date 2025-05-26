@@ -1,0 +1,142 @@
+
+.sideBar-Div{
+    width: 100%;
+    max-height: 60rem;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 40px  rgba(0, 0, 0, 0.599);
+    /* padding: 5px; */
+    height: 90vh;
+    border-radius: 20px;
+    display: flex;
+    gap: 5px;
+    overflow: hidden;
+    flex-direction: column;
+    
+    margin-left: 8px;
+    margin-right: 8px;
+    border: 0.5px solid rgba(255, 255, 255, 0.571);
+    
+    
+}
+.topSection-Div{
+    box-shadow: 0 0 10  rgba(0, 0, 0, 0.599);
+    padding: 3px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 8%;
+    font-family: poppins;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    
+}
+.contactIcon-Icon{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0;
+}
+.topSection-Label{
+    font-size:small;
+    margin: 0;
+    font-weight: 500;
+    opacity: 75%;
+}
+.userSection-Div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    
+    height: 95%;
+}
+.userContainer-Div{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: poppins;
+    font-size:12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap:nowrap;
+    padding: 10px;
+    justify-content: start;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.237);
+    
+    
+    margin-left: 0.4rem;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+.userContainer-Div:hover{
+    cursor: pointer;
+    background:#f5dcc43c;
+}
+.userContainer-Image{
+    height:2rem ;
+    width: 2rem;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+}
+.onlineIndicator-Span{
+    
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    transform: translate(-8px , 12px);
+}
+.userContainer-Label{
+    
+    font-size: 0.8rem;
+    margin-left: 0.4rem;
+    transition: all 0.2s ease;
+}
+.userContainer-Div:hover .userContainer-Label{
+    letter-spacing: 2px;
+    
+}
+
+.statusContainer-Div{
+    
+    display: flex;
+    flex-direction: row;
+}
+@keyframes UserHover{
+    to{
+        
+    }
+}
+@media (max-width: 600px) {
+  .userContainer-Label {
+    flex-wrap: wrap;
+    font-size: xx-small;
+    overflow: hidden;
+  }
+  .userContainer-Div{
+   border-bottom: none 
+  }
+}
+@keyframes LabelAnimate{
+    0% { text-shadow: 2px 0 red, -2px 0 cyan; }
+  20% { text-shadow: -2px 0 red, 2px 0 cyan; }
+  40% { text-shadow: 2px 0 green, -2px 0 blue; }
+  60% { text-shadow: -2px 0 yellow, 2px 0 pink; }
+  80% {text-shadow: none;}
+  100% { text-shadow: none; }
+
+}
+.sideBar-Div::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sideBar-Div::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.sideBar-Div::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

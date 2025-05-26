@@ -1,0 +1,304 @@
+.messageContainer-Div{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-left: 10px;
+    position: abso;
+    padding: auto;
+    font-family: poppins;
+    z-index: -1;
+
+    
+    
+    
+}
+.messageContainer-Div{
+    width: 98.35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.topPanel-Div{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0.5px solid rgba(192, 192, 192, 0.503);
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+    width: 99.8%;
+    height: 8%;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+}
+.topPanelLeft-Div{
+    display: flex;
+    flex-direction: row;
+}
+.topPanelLeftUser-Div{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-around;
+}
+.topPanelLeft-Image{
+    height:2.5rem ;
+    width: 2.5rem;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+}
+.topStatusBar-Div{
+    
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    flex-direction: row;
+}
+.topPanelRight-Div{
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: auto;
+    justify-self:end;
+}
+.close-Button{
+    height: 100%;
+    width: 3rem;
+    box-shadow: 0 0 10  rgba(0, 0, 0, 0.599);
+    backdrop-filter: blur(20px);
+    margin: 0;
+    border: none;
+    background: transparent;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+
+}
+.bottom-Button{
+    height: 100%;
+    width: 3rem;
+    box-shadow: 0 0 10  rgba(0, 0, 0, 0.599);
+    backdrop-filter: blur(20px);
+    margin: 0;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.bottom-Button:hover{
+    filter:drop-shadow( 0 0 20px rgb(187, 177, 177))
+}
+.close-Button:hover{
+    opacity: 0.6;
+    border-radius: 50%;
+    color: brown;
+}
+.close-Button:active{
+    transform: scale(0.8);
+}
+.close-Icon{
+    transition: all 0.5s ease;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    cursor: pointer;
+    background: transparent;
+    color: rgba(160, 156, 156, 0.741);
+}
+
+
+
+
+
+
+
+
+.mainContainer-Div{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcomeContainer-Div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(22, 22, 22, 0.503);
+    border: 0.5px solid rgba(192, 192, 192, 0.503);
+    border-radius: 20px;
+    padding: 20px;
+    z-index: -1;
+    backdrop-filter: blur(30px);
+    width: fit-content;
+}
+.welcomeIconContainer-Div{
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.welcome-Label{
+    font-family: poppins;
+    font-weight: 600;
+    font-size: x-large;
+    
+}
+.welcomeContainer-Icon{
+    height: 4rem;
+    width: 4rem;
+    border-radius:10px;
+    padding: 20px;
+    animation: ChatIconAnimate 1s infinite ease-in-out;
+    
+}
+.welcomeContainer-Label{
+    font-family: poppins;
+    font-size: medium;
+    animation: LabelAnimate 2.5s infinite ease;
+
+}
+.icon{
+    animation: IconAnimate 5s infinite ease-out;
+}
+
+/* Image Preview */
+
+.imagePreview-Div{
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+}
+
+.imagePreview-Image{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 10px;
+
+}
+.imagePreview-Button{
+    transition: all 0.3s ease;
+
+}
+.imagePreview-Button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+
+}
+.messagePanel-Div{
+    display: flex;
+    flex-direction: column;
+    /* align-items: start; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 90%;
+    width: 100%;
+    overflow: auto;
+    padding: 20px;
+
+}
+.messageInputPanel-Div{
+    box-shadow: 0 0 20px rgba(22, 22, 22, 0.503);
+    border-top: 0.5px solid rgba(192, 192, 192, 0.503);
+    display: flex;
+    
+    margin: 0;
+    padding: 10px;
+    justify-content: space-around;
+    align-items:center;
+    height: 10%;
+    width: 99.8%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.message-Input{
+    
+    width: 80%;
+    height: 2.4rem;
+    color: aliceblue;
+    background: #ffffff1d;
+    padding-left: 5px;
+    justify-self: center;
+    border-radius: 5px;
+    box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.637);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(20px);
+    transition: all 0.2s ease;
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    /* z-index: -3; */
+    font-family: poppins;
+    font-size: 0.8rem;
+}
+.message-Input:focus{
+    border: 1px dotted rgba(255, 255, 255, 0.096);
+}
+.send-Button{
+    height: 100%;
+    width: 3rem;
+    box-shadow: 0 0 10  rgba(0, 0, 0, 0.599);
+    backdrop-filter: blur(20px);
+    padding: 4px;
+    margin: 0;
+    border: none;
+    background: transparent;
+    border-radius: 10px;
+    transition: all 0.1s ease;
+    
+    
+}
+.send-Button:active{
+    transform: scale(0.8) ;
+}
+.send-Button:hover{
+ animation: SendAnimate 1s  ease;   
+}
+@keyframes ChatIconAnimate{
+    0%{
+        transform: translateX() translateY() rotate3d(0 , 1 , 0, 0deg);
+    }
+    50%{
+        transform:  translateY(-80px) rotate3d(1 , 0.2 , 0, 90deg);
+        filter: none
+    }
+    80%{
+        
+    }
+    100%{
+        transform: translateY(0) rotate3d(1 , 0.2 , 0, 360deg);
+
+    }
+    
+}
+@keyframes LabelAnimate{
+    0% { text-shadow: 2px 0 red, -2px 0 cyan; }
+    20% { text-shadow: -2px 0 red, 2px 0 cyan; }
+    40% { text-shadow: 2px 0 green, -2px 0 blue; }
+    60% {text-shadow: none;}
+    80% {text-shadow: none;}
+    100% { text-shadow: none; }
+
+}
+@keyframes IconAnimate{
+    to{
+        transform: rotateY(360deg);
+    }
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 8ch } /* Adjust for text length */
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+@keyframes SendAnimate{
+    to{
+        transform: rotate3d(1,0,0,360deg);
+    }
+}

@@ -1,0 +1,45 @@
+.theme-Container{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-family: poppins;
+    z-index: 10;
+    gap:0.4rem;
+    filter: brightness();
+    padding: 1rem;
+    position: relative;
+}
+.theme-Button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 3rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 100;
+    padding: 0.4rem;
+    transition: all 0.3s ease;
+}
+.theme-Button:hover{
+    transform: translate(0 , 0.5rem);
+}
+.theme-Button:hover .theme-Label{
+    transform: translate(0 , 1.3rem);
+    letter-spacing: 1px;
+    opacity: 1;
+}
+.theme-Label{
+    font-family: poppins;
+    mix-blend-mode:screen;
+    color: aliceblue;
+    opacity: 0;
+    transition: all 0.3s ease;
+    letter-spacing: 10px;
+
+}

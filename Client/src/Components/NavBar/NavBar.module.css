@@ -1,0 +1,181 @@
+.navbar-Div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    opacity: 0.8;
+    justify-content: space-between;
+    height: 50px;   
+    border-radius: 8px;
+    border: 0;
+    padding: 10px;
+    color: #3f381d;
+    margin-bottom: 25px;
+}
+.navbarLeft-Div{
+
+    padding: 5px;
+    margin: 0.6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+.chat-Icon{
+    padding: 10px;
+    border-radius: 50px;
+    height:2rem ;
+    width: 2rem;
+    
+    transition: all 0.3s ease;
+    /* animation: IconRotate 1s infinite ease forwards; */
+}
+.chat-Icon:active{
+    transform: scale(0.8 , 0.8);
+}
+.chat-Icon:hover{
+    cursor: pointer;
+    filter: drop-shadow(0 0 0.25rem #ffffffcc)
+            drop-shadow(0 0 0.5rem #626d59cc)
+            drop-shadow(0 0 1rem #727e66cc);
+}
+.appName-label{
+    font-family:'Poppins';
+    font-weight:400;
+}
+.navbarRight-Div{
+    padding-right: 0.8rem;
+    display: flex;
+    flex-direction: row;
+}
+.icon-Div{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.themeicon-Div {
+    display: flex;
+    justify-content: center; /* Horizontally center contents */
+    align-items: center;
+    position: relative;
+    margin-right: 4rem;
+}
+.themeComponent-Div{
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.3s ease;
+    /* position: absolute; */
+}
+.themeicon-Div:hover .themeComponent-Div{
+    opacity: 1;
+    transform: translateY(4rem);
+}
+.themePicker-Icon {
+    top: 5rem; 
+
+}
+
+.theme-Icon {
+    height: 2.1rem;
+    width: 2.1rem;
+    transition: all 0.5s ease;
+    z-index: 2;
+    position: relative;
+    
+    margin-left: -7rem; /* Creates the overlap */
+}
+
+
+.settings-Icon{
+    height:1.8rem ;
+    width: 1.8rem;
+    transition: all 0.5s reverse;
+    transform: rotate(0deg);
+    /* transition: all 1.2s ease;  */
+    
+}
+.icon-Label{
+    
+    font-family:'Poppins';
+    font-weight:400;
+    font-size: 15px;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    transform:translatex(-2rem) ;
+    transition: all 0.5s ease;
+}
+
+
+.icon-Div:hover .theme-Icon{
+    animation: ThemeIconAnimation 0.3s forwards ;
+    position: relative;
+    cursor: pointer;
+    
+}
+.icon-Div:hover .settings-Icon{
+    animation: IconRotate 0.5s forwards ;
+    position: relative;
+    cursor: pointer;
+    
+}
+.icon-Div:hover .icon-Label{
+    animation: TextAppear 0.8s forwards;
+    cursor: pointer;
+    
+}
+.icon-Div:active .settings-Icon{
+    animation: IconRotate 0.5s forwards ;
+    position: relative;
+    cursor: pointer;
+    
+}
+.icon-Div:active .icon-Label{
+    transform: scale(0.8,0.8);
+    
+}
+.icon-Div:hover + .icon-Div {
+  transform: translateX(1rem);
+  transition: transform 0.5s ease;
+}
+
+@keyframes IconRotate {
+    0% {
+      transform: rotate(0deg) translatex(0rem) ;
+      opacity: 0.75;
+      
+      
+    }
+    100%{
+        transform: rotate(360deg) translatex(0rem) ;
+        opacity: 0.75;
+        
+        
+    }
+  }
+@keyframes TextAppear {
+    0% {
+      opacity: 0;
+      transform:translatex(-2rem) ;
+    }
+    100%{
+        opacity: 1;
+        transform:translatex(.2rem) ;
+    }
+
+  }
+  @keyframes ThemeIconAnimation {
+    0% {
+      
+      transform: rotate(0deg)
+    }
+    50%{
+        transform: rotate(75deg)
+    }
+    
+    100%{
+        
+        transform: rotate(0deg)
+    }
+
+  }

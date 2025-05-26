@@ -1,0 +1,36 @@
+html, body, #root {
+  height: 100vh;
+  margin: 0;
+  overflow:auto;
+}
+.Main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+::-webkit-scrollbar {
+  width: 8px; /* vertical scrollbar */
+  height: 3px; /* horizontal scrollbar */
+}
+
+/* Style the scrollbar track (background) */
+::-webkit-scrollbar-track {
+  background: #f1f1f177;
+  border-radius: 10px;
+}
+
+/* Style the draggable thumb */
+::-webkit-scrollbar-thumb {
+  background: #ffffffd6;
+  border-radius: 10px;
+}
+
+/* On hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

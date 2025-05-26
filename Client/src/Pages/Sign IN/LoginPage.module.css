@@ -1,0 +1,268 @@
+
+.mainPage-Div{
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh  ;
+    width: 90vw;
+}
+.loginPage-Div{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 25rem;
+    height:31rem;
+    align-items: center;
+    padding-left: 50px;
+    padding-right:50px ;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(141, 132, 132, 0.736);
+    
+}
+.pageToolBar-Div{
+    justify-content: flex-start;
+    border-radius: 20px;
+    display: flex;
+    gap: 5px;
+    margin-bottom: 2rem;
+    height: 5rem;
+    flex-direction: row;
+    cursor: pointer;
+    z-index: -1;
+}
+
+
+.pageSwitch-Button{
+    cursor: pointer;
+    z-index: 3;
+    width: 10rem;
+    height: 80%;
+    background: none;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 0;
+    z-index: -1;
+    border-left: 0.05px solid rgba(238, 232, 232, 0.453);
+    backdrop-filter: blur(50px);
+    box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.12),
+    0 1px 3px rgba(0, 0, 0, 0.24);
+    flex: 1;
+    padding: 1rem;
+    transition: all 0.3s ease;
+    
+}
+.pageSwitch-Button:active{
+    box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0),
+    0 1px 3px rgba(0, 0, 0, 0);
+    
+}
+.page-Label{
+    animation: LabelAnimation 0.25s ease;
+    font-family: poppins , sans-serif;
+    font-size: x-large;
+    font-weight: 700;
+}
+.loginInput-Div{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.credentials-Input{
+    width: 20rem;
+    height: 2rem;
+    max-width: 30rem;
+    background: #ffffff6d;
+    padding-left: 5px;
+    margin-top: 25px;
+    border-radius: 5px;
+    box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.637);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(20px);
+    transition: all 0.2s ease;
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    z-index: -3;
+    font-family: poppins;
+    font-size: 0.8rem;
+    
+}
+.credentialsUser-Label {
+    position: absolute;
+    /* top: 0.4rem;
+    left: 1rem; */
+    font-size: 1.0rem;
+    background: transparent;
+    z-index: 1;
+    pointer-events: none;
+    transform: translate(0.5rem , -2.8rem);
+    transition: all 0.2s ease;
+    font-family: poppins;
+    opacity: 0.6;
+}
+.credentials-Input:focus +  .credentialsUser-Label
+{
+    color: #A86523;
+    font-size: 0.8rem;
+    z-index: 1111;
+    transform: translate(1.0rem,-4.5rem);
+    opacity: 1;
+}
+.credentials-Input:focus +  .credentialsPassword-Label
+{
+    color: #A86523;
+    font-size: 0.8rem;
+    z-index: 1111;
+    transform: translate(1.0rem,-4.5rem);
+    opacity: 1;
+}
+.credentials-Input:valid + .credentialsUser-Label
+{   
+
+    color: #A86523;
+    font-size: 0.8rem;
+    z-index: 1111;
+    transform: translate(0.2rem,-4.5rem);
+    opacity: 1;
+    
+}
+.credentials-Input:valid + .credentialsPassword-Label
+{   
+
+    color: #A86523;
+    font-size: 0.8rem;
+    z-index: 1111;
+    transform: translate(0.2rem,-4.5rem);
+    opacity: 1;
+    
+}
+.credentials-Input:focus{
+    transform: scale(0.95);
+    box-shadow: none;
+    border:1px solid #A86523;
+}
+/*Now for password input*/
+.credentialsPassword-Label {
+    position: absolute;
+    /* top: 0.4rem;
+    left: 1rem; */
+    font-size: 1.0rem;
+    background: transparent;
+    z-index: 1;
+    pointer-events: none;
+    transform: translate(0.5rem , -2.8rem);
+    transition: all 0.2s ease;
+    font-family: poppins;
+    opacity: 0.6;
+}
+.login-Button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 40%;
+    height: 3rem;
+    margin-top: 2rem;
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.637);
+    backdrop-filter: blur(5px);
+    transition: all 0.1s ease;
+    font-family: poppins;
+    background: transparent;
+    border: 0.5px solid rgba(255, 255, 255, 0.748);
+    opacity: 0.8;
+    
+}
+.login-Button:hover{
+    
+}
+.show-Button{
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    right: 3rem;
+    top:19rem;
+    align-items: center;
+    width: 6%;
+    height: 2rem;
+    padding: 10px;
+    border: 0;
+    border-radius:25%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.637);
+    backdrop-filter: blur(5px);
+    transition: all 0.1s ease;
+    font-family: poppins;
+    background: transparent;
+    border: 0.2px dashed rgba(117, 117, 117, 0.748);
+}
+.show-Button:active{
+    filter: none;
+    box-shadow: none;
+    transform: scale(0.8);
+    border: 0.2px solid  rgba(117, 117, 117, 0.748);
+}
+
+.login-Button:active{
+    filter: none;
+    box-shadow: none;
+    transform: scale(0.8);
+}
+.logo{
+    transform: scale(2);
+}
+.registerContainer{
+    width: 100%;
+    display: flex;
+    backdrop-filter:blur(40px);
+    justify-content: center;
+}
+.register{
+    font-family: poppins;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    opacity: 0.6;
+    margin-bottom: 30px;
+}
+.register:hover{
+    text-decoration: underline;
+}
+@keyframes Pulse{
+    0%{
+        box-shadow: (0 0 0px red)
+    }
+    50%{
+        box-shadow: (0 0 20 20px red)
+    }
+    100%{
+        box-shadow: (0 0 40px red)
+    }
+}
+@keyframes LabelPopup{
+    to{
+        transform:scale(-0.6 ,- 0.6);
+        z-index: 1111;
+        transform: translate(0,-5.3rem);
+        opacity: 1;
+    }
+}
+@keyframes LabelAnimation{
+    0%{
+        transform: translateX(100px);
+    }
+    100%{
+
+    }
+}
