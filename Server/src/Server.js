@@ -28,7 +28,7 @@ const __dirname = path.resolve()
 
 if(process.env.NODE_ENV === 'production'){
     console.log(process.env?.NODE_ENV)
-    app.use(express.static(path.join(__dirname , '../Client/dist')))
+    app.use(express.static(path.join(__dirname , '../','Client','dist')))
 
     //serve the index.html when any initial url is hit
     app.get('*' , (req , res) => {
