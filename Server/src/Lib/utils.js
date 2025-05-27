@@ -8,7 +8,7 @@ export const GenerateJWT = async (NewUser , res) => {
         token , {
             maxAge: 60 * 60 * 1000,
             httpOnly:true,
-            secure:process.env.Environment !== "development",
+            secure:process.env.NODE_ENV !== "development",
             
         }
     )
