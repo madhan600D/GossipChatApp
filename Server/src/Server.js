@@ -31,7 +31,7 @@ if(process.env.NODE_ENV === 'production'){
     app.use(express.static(path.join(__dirname , '../','Client','dist')))
 
     //serve the index.html when any initial url is hit
-    app.get('/{*any}' , (req , res) => {
+    app.get('/{*any}'  , (req , res) => {
         return res.sendFile(path.join(__dirname , "../Client" , "dist" , 'index.html'))
     })
 }
