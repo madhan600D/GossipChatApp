@@ -1,7 +1,7 @@
 {
   "name": "gossip(chat_app)",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "Server.js",
   "scripts": {
     "build":"npm install --prefix Server && npm install --prefix Client && npm run build --prefix Client",
     "start": "npm run start --prefix Server"
