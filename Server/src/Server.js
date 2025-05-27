@@ -39,6 +39,7 @@ try {
     MainServer.listen(ServerPort, () => {
         connectDB()
         console.log("Server running on port", ServerPort);
+        console.log("Production Port" , import.meta.env?.MODE)
     });
 } catch (error) {
     console.error("Server failed to start:", error);
