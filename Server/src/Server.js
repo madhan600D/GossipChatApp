@@ -27,6 +27,7 @@ app.use('/messages' , MessageRouter);
 const __dirname = path.resolve()
 
 if(process.env.environment === 'production'){
+    console.log(process.env?.environment)
     app.use(express.static(path.join(__dirname , '../Client/dist')))
 
     //serve the index.html when any initial url is hit
