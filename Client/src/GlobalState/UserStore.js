@@ -14,7 +14,7 @@ const useUser = create((set ,get) => ({
     checkAuth: async () => {
         set({isLoading:true})
         try {
-            const res  = await AxiosInstance.get('users/validate-user');
+            const res  = await AxiosInstance.get('/api/users/validate-user');
             set({
                 User: {
                     _id: res.data.data._id,
@@ -45,7 +45,7 @@ const useUser = create((set ,get) => ({
     Signup: async (parm) => {
     try {
 
-        const res = await AxiosInstance.put('users/signup' , parm);
+        const res = await AxiosInstance.put('/api/users/signup' , parm);
         const DataFromServer =  res.data.data;
 
         showToast(DataFromServer.message , true)
@@ -58,7 +58,7 @@ const useUser = create((set ,get) => ({
         set({isLoading:false})
     try {
         
-        const res = await AxiosInstance.put('users/logout');
+        const res = await AxiosInstance.put('/api/users/logout');
         const DataFromServer =  res.data;
         get().DisconnectSocket();
         //Clear all variables 
@@ -86,7 +86,7 @@ const useUser = create((set ,get) => ({
     signin:async (parm) => {
 
         try {
-            const res = await AxiosInstance.put('users/login' , parm)
+            const res = await AxiosInstance.put('/api/users/login' , parm)
             const DataFromServer = await res.data
             set({ UserValidity: DataFromServer.success });
             set({USer:get().checkAuth()})
@@ -100,7 +100,7 @@ const useUser = create((set ,get) => ({
         set({isUploadingImage:true})
         try {
            
-           const res = await AxiosInstance.patch('users/update-profile', { base64: parm },
+           const res = await AxiosInstance.patch('/api/users/update-profile', { base64: parm },
 
             {
                 headers:{

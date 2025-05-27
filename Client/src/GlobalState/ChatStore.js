@@ -14,7 +14,7 @@ export const UseChat = create((set , get) => ({
     LoadUsers: async () => {
         set({isUsersLoading:true})
         try {
-            const res = await AxiosInstance.get(`/messages/`)
+            const res = await AxiosInstance.get(`/api/messages/`)
             const DataFromServer = res.data.data;
             set({AllUsers:DataFromServer})
         } catch (error) {
@@ -31,7 +31,7 @@ export const UseChat = create((set , get) => ({
             if(!id){
                 return 
             }
-            const res =  await AxiosInstance.get(`/messages/${id}`)
+            const res =  await AxiosInstance.get(`/api/messages/${id}`)
             const DataFromServer = res.data.data || '';
             set({Messages:DataFromServer})
         } catch (error) {
@@ -47,7 +47,7 @@ export const UseChat = create((set , get) => ({
         set({isMessagesSending:true})
         try {
             
-            const res = await AxiosInstance.put(`/messages/${id}` ,data)
+            const res = await AxiosInstance.put(`/api/messages/${id}` ,data)
             const DataFromServer = res.data;
             set({Messages: [...get().Messages , DataFromServer.data]})
             

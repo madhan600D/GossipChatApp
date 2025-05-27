@@ -22,8 +22,8 @@ app.use(cors({
 
 app.use(express.json({ limit: '100mb' }));
 app.use(cookieParser())
-app.use('/users',userRouter);
-app.use('/messages' , MessageRouter);
+app.use('/api/users',userRouter);
+app.use('/api/messages' , MessageRouter);
 const __dirname = path.resolve()
 
 if(process.env.NODE_ENV === 'production'){

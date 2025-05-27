@@ -101,11 +101,11 @@ const useTheme = create((set, get) => ({
       });
   } ,
   LoadState : async() => {
-    const res = await AxiosInstance.get('users/get-theme')
+    const res = await AxiosInstance.get('/api/users/get-theme')
     get().SetTheme(res.data.data)
   },
   UpdateState : async(theme) => {
-    const res = await AxiosInstance.post('users/update-theme' , {theme})
+    const res = await AxiosInstance.post('/api/users/update-theme' , {theme})
   }
 }));
 
